@@ -80,26 +80,34 @@ class DigitalTimer extends Component {
         </div>
         <div className="desCon">
           <div className="rightFirstCon">
-            <div className="dsfjCon">
-              <button className="btn" type="button" onClick={this.toggleStart}>
+            <button
+              className="dsfjCon"
+              type="button"
+              onClick={this.toggleStart}
+            >
+              <div className="btn">
                 <img
                   src="https://assets.ccbp.in/frontend/react-js/pause-icon-img.png"
                   className="aspect1"
                   alt="pause icon"
                 />
-              </button>
+              </div>
               <p>Pause</p>
-            </div>
-            <div className="dsfjCon">
-              <button className="btn" type="button" onClick={this.restartTimer}>
+            </button>
+            <button
+              className="dsfjCon"
+              type="button"
+              onClick={this.restartTimer}
+            >
+              <div className="btn">
                 <img
                   src="https://assets.ccbp.in/frontend/react-js/reset-icon-img.png"
                   className="aspect1"
                   alt="reset icon"
                 />
-              </button>
+              </div>
               <p>Resart</p>
-            </div>
+            </button>
           </div>
           <p>Set Timer limit</p>
           <div className="lowerCon">
@@ -128,7 +136,7 @@ class DigitalTimer extends Component {
 
     return (
       <div className="mainDiv">
-        <h1>DigitalTimer</h1>
+        <h1>Digital Timer</h1>
         {start ? (
           this.timerStared()
         ) : (
@@ -145,34 +153,34 @@ class DigitalTimer extends Component {
             </div>
             <div className="desCon">
               <div className="rightFirstCon">
-                <div className="dsfjCon">
-                  <button
-                    className="btn"
-                    type="button"
-                    onClick={this.toggleStart}
-                  >
+                <button
+                  className="dsfjCon"
+                  type="button"
+                  onClick={this.toggleStart}
+                >
+                  <div className="btn">
                     <img
                       src="https://assets.ccbp.in/frontend/react-js/play-icon-img.png"
                       className="aspect1"
                       alt="play icon"
                     />
-                  </button>
+                  </div>
                   <p>Start</p>
-                </div>
-                <div className="dsfjCon">
-                  <button
-                    className="btn"
-                    type="button"
-                    onClick={this.restartTimer}
-                  >
+                </button>
+                <button
+                  className="dsfjCon"
+                  type="button"
+                  onClick={this.restartTimer}
+                >
+                  <div className="btn">
                     <img
                       src="https://assets.ccbp.in/frontend/react-js/reset-icon-img.png"
                       className="aspect1"
                       alt="reset icon"
                     />
-                  </button>
+                  </div>
                   <p>Resart</p>
-                </div>
+                </button>
               </div>
               <p>Set Timer limit</p>
               <div className="lowerCon">
@@ -184,7 +192,7 @@ class DigitalTimer extends Component {
                   <p>-</p>
                 </button>
                 <button className="btn2" type="button">
-                  <h1>{settedMinutes}</h1>
+                  <p>{settedMinutes}</p>
                 </button>
                 <button
                   className="btn"
